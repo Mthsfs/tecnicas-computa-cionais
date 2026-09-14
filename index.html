@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexão: IA na Escola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Inteligência Artificial na Escola</h1>
+        <p>Unidade de Técnicas Computacionais - 3º Trimestre</p>
+    </header>
+
+    <main class="container">
+        <section class="card-principal">
+            <h2>O que você pensa sobre a IA na educação?</h2>
+            <p>Selecione uma das opções abaixo para registrar sua opinião sobre o uso de Inteligência Artificial nas salas de aula.</p>
+            
+            <div class="botoes-opcao">
+                <button class="btn" onclick="votar('positivo')">👍 É uma excelente ferramenta de apoio</button>
+                <button class="btn" onclick="votar('neutro')">🤔 Deve ser usada com moderação</button>
+                <button class="btn" onclick="votar('desafio')">⚠️ Pode atrapalhar o aprendizado</button>
+            </div>
+        </section>
+
+        <section class="card-resultado hidden" id="card-resultado">
+            <h3>Obrigado por refletir conosco!</h3>
+            <p id="mensagem-resultado"></p>
+            <div class="feedback-ia">
+                <strong>💡 Reflexão Ética:</strong> A tecnologia deve ser um copiloto para expandir nossa mente, e nunca para substituir o pensamento crítico e a autoria própria.
+            </div>
+            <button class="btn-reiniciar" onclick="reiniciar()">Votar Novamente</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido durante as aulas de Técnicas Computacionais - Alura Start</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
